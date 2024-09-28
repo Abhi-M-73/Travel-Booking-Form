@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col gap-6 items-center justify-center h-screen bg-gray-300">
+    <h1 class="text-5xl font-bold">Book <span class="text-indigo-500">Your Travel Ticket</span> Here</h1>
+    <main class="max-w-screen-3xl mx-auto bg-[#f3f3f3] rounded-xl flex p-10 shadow-lg ">
+        <!-- Left Section  -->
+       <section>
+         <div class="w-96 h-[70vh] ">
+            <img src="https://i.pinimg.com/736x/82/d4/ec/82d4ec65ccdd1ee6d78ec619782147eb.jpg" class="h-full w-full object-cover object-center rounded-l-2xl" alt="">
+         </div>
+       </section>
+       <!-- Right Section  -->
+       <section>
+        <div class="w-96 h-[70vh] p-4 bg-white shadow-lg border-b-4 border-t-4 border-indigo-500 rounded-r-2xl">
+            <!-- Flight Options (One Way, Round Trip, Multi City) -->
+            <div class="flex justify-between mb-6">
+              <button class="bg-gray-200 py-2 px-4 rounded-md text-gray-600 hover:bg-gray-300 hover:bg-indigo-500 hover:text-white">One Way</button>
+              <button class="bg-indigo-500 text-white py-2 px-4 rounded-md">Round Trip</button>
+              <button class="bg-gray-200 py-2 px-4 rounded-md text-gray-600 hover:bg-indigo-500 hover:text-white">Multi City</button>
+            </div>
+        
+            <!-- Departure and Arrival Airports -->
+            <div class="mb-4">
+              <label for="departure" class="block text-gray-700 font-semibold mb-2">Departure Airport</label>
+              <select id="class" class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                <option>Select Departure Airport</option>
+                <option>Gorakhpur</option>
+                <option>Luckn0w</option>
+                <option>Pune</option>
+                <option>Hadrabad</option>
+                <option>Bangluru</option>
+                <option>Mumbai</option>
+                <option>Goa</option>
+              </select>
+            </div>
+            <div class="mb-4">
+              <label for="arrival" class="block text-gray-700 font-semibold mb-2">Arrival Airport</label>
+              <select id="class" class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                <option>Select Arrival Airport</option>
+                <option>Gorakhpur</option>
+                <option>Luckn0w</option>
+                <option>Pune</option>
+                <option>Hadrabad</option>
+                <option>Bangluru</option>
+                <option>Mumbai</option>
+                <option>Goa</option>
+              </select>
+            </div>
+        
+            <!-- Departure and Return Dates -->
+            <div class="grid grid-cols-2 gap-4 mb-4">
+              <div>
+                <label for="depart-date" class="block text-gray-700 font-semibold mb-2">Depart Date</label>
+                <input type="date" id="depart-date" class="w-full px-4 py-2 border border-gray-300 rounded-lg" placeholder="Select date">
+              </div>
+              <div>
+                <label for="return-date" class="block text-gray-700 font-semibold mb-2">Return Date</label>
+                <input type="date" id="return-date" class="w-full px-4 py-2 border border-gray-300 rounded-lg" placeholder="Select date">
+              </div>
+            </div>
+        
+            <!-- Passengers and Class -->
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div>
+                <label for="passengers" class="block text-gray-700 font-semibold mb-2">Passengers</label>
+                <select id="passengers" class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                  <option >Select No.</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4+</option>
+                </select>
+              </div>
+              <div>
+                <label for="class" class="block text-gray-700 font-semibold mb-2">Class</label>
+                <select id="class" class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                  <option>Select Class</option>
+                  <option>Economy Class</option>
+                  <option>Business Class</option>
+                  <option>First Class</option>
+                </select>
+              </div>
+            </div>
+        
+            <!-- Search Button -->
+            <div>
+              <button class="w-full bg-indigo-500 text-white font-bold py-2 rounded-lg hover:bg-indigo-600">
+                Search
+              </button>
+            </div>
+          </div>
+        
+       </section>
+    </main>
+</body>
+</html>
